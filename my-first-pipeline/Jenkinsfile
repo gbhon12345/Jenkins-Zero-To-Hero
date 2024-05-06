@@ -5,9 +5,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'mvn clean install
-        -Dmaven.test.skip=true
-        -Dtest=maven -f Java_helloworld.java '
+        sh 'node --version'
       }
     }
   }
